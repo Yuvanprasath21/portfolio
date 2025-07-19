@@ -268,64 +268,94 @@ nav ul li a:hover::after {
   }
 }
 
-#project{
+#project {
     background-color: #1A1A1D;
     width: 100%;
     min-height: 600px;
     color: white;
     padding-top: 30px;
-}
-#project h2{
+    padding-bottom: 50px;
+  }
+
+  #project h2 {
     font-size: 35px;
     color: white;
-}
-#row{
-    padding-top: 30px;
-    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  #row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 40px;
-}
-#col1 img{
-    margin-top: 35px;
-    width: 180px;
-  height: 100px;
-  border-radius: 20px;
-  margin-bottom: 35px;
-}
+    padding: 20px;
+  }
 
-#col1{
+  #col1 {
     text-align: center;
     width: 250px;
     height: 470px;
     border: 3px solid rgba(100, 37, 178, 0.5); 
     background-color: rgb(99, 63, 165);
     border-radius: 20px;
-}
-#col1 button{
-    margin-top: 50px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  #col1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  #col1 img {
+    margin-top: 10px;
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    object-fit: cover;
+  }
+
+  #col1 h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #ffffff;
+  }
+
+  #col1 a {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  #col1 a button {
+    margin-top: 20px;
     width: 150px;
     height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.02);;
+    border: none;
     border-radius: 20px;
-    background-color: #1A1A1D;
-    font-size: 25px;
-}
+    background-color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
 
-#col1 button a{
-    text-decoration: none;
-    font-size: 25px;
+  #col1 a button:hover {
+    width: 170px;
+    height: 60px;
+    background-color: #121212;
+    transition: 300ms ease-in-out;
+  }
+
+  .gradient-text {
     background-image: linear-gradient(135deg, #6425b2 0%, #FFFCFB 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
-}
-#col1 button:hover{
-   width: 170px;
-   height: 60px;
-   transition: 800ms;
-}
+  }
 /* PRIZES SECTION */
 .prize-section {
   padding: 60px 20px;
